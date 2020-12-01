@@ -1,0 +1,128 @@
+.bg-light-black{
+    background-color:#232323
+}
+.direction_field_edit{
+    display: flex;
+}
+.remove_direction,.remove_field{
+    cursor: pointer;
+}
+.error {
+    color: #ff0000;
+    font-size: 1rem !important;
+    /* position: relative !important;
+    line-height: 1 !important;
+    padding-left: 10px;*/
+    width: 100%; 
+  
+  }
+img{
+    object-fit: cover !important;
+}
+.remove_field_btn{
+    margin-top: 32px;
+}
+@media (max-width:767px){
+    .remove_field_btn{
+        margin-top: 15px;
+    }
+}
+@media screen and (max-width:374px){
+    div.dataTables_wrapper div.dataTables_paginate {
+        /* margin: 2px -37px !important; */
+           }
+}
+/* when hover image trash icon show */
+.image-block {
+    position: relative;
+  }
+.image-block:hover img{
+    opacity: 0.4;
+}
+.delete-icon-on-hover {
+    display: none;
+    position: absolute;
+    top: 40px;
+    left: 40px;
+  }
+.image-block:hover .delete-icon-on-hover{
+    display: block;
+}
+.delete-icon-on-hover .fa-trash{
+    color: #FF0000;
+    font-size: 22px;
+} 
+/* placeholder */
+::placeholder { /* Firefox, Chrome, Opera */ 
+    color: rgba(73,84,99,0.5) !important; 
+} 
+:-ms-input-placeholder { /* Internet Explorer 10-11 */ 
+    color: rgba(73,84,99,0.5) !important; 
+} 
+  
+::-ms-input-placeholder { /* Microsoft Edge */ 
+    color: rgba(73,84,99,0.5) !important; 
+} 
+
+/* when hover image trash icon show */
+.image-block-recipe {
+    position: relative;
+    width: 100px;
+  }
+.image-block-recipe:hover img{
+    opacity: 0.4;
+}
+.delete-icon-on-hover-recipe {
+    display: none;
+    position: absolute;
+    top: 47px;
+    left: 40px;
+  }
+.image-block-recipe:hover .delete-icon-on-hover-recipe{
+    display: block;
+}
+.delete-icon-on-hover-recipe .fa-trash{
+    color: #FF0000;
+    font-size: 22px;
+} 
+/* main loader */
+#loader {
+    position:fixed;
+    width:100%;
+    left:0;right:0;top:0;bottom:0;
+    background-color: rgba(255,255,255,0.7);
+    z-index:9999;
+    display:none;
+  }
+  
+  @-webkit-keyframes spin {
+  from {-webkit-transform:rotate(0deg);}
+  to {-webkit-transform:rotate(360deg);}
+  }
+  
+  @keyframes spin {
+  from {transform:rotate(0deg);}
+  to {transform:rotate(360deg);}
+  }
+  
+  #loader::after {
+    content:'';
+    display:block;
+    position:absolute;
+    left:48%;top:40%;
+    width:40px;height:40px;
+    border-style:solid;
+    border-color:#253992;
+    border-top-color:transparent;
+    border-width: 4px;
+    border-radius:50%;
+    -webkit-animation: spin .8s linear infinite;
+    animation: spin .8s linear infinite;
+  }
+  .site-logo{
+    margin-top: 10px;
+    margin-bottom: 10px;
+  }
+.alert-message{
+  word-wrap: break-word;
+}
